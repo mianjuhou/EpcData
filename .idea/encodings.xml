@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" addBOMForNewFiles="with NO BOM">
+    <file url="file://$PROJECT_DIR$/fastdfsdemo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fromredis" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hssdata" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hssdemo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/messagequeue" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/msgreceive" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/msgsend" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/toredis" charset="UTF-8" />
+  </component>
+</project>

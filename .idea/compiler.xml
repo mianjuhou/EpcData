@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="EpcData" />
+        <module name="fastdfsdemo" />
+        <module name="fromredis" />
+        <module name="hssdata" />
+        <module name="hssdemo" />
+        <module name="messagequeue" />
+        <module name="msgreceive" />
+        <module name="msgsend" />
+        <module name="toredis" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="epcdata" target="1.8" />
+      <module name="hsstest" target="1.8" />
+      <module name="msgdemo" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="epcdata" options="-parameters" />
+      <module name="fastdfsdemo" options="-parameters" />
+      <module name="fromredis" options="-parameters" />
+      <module name="hssdata" options="-parameters" />
+      <module name="hssdemo" options="-parameters" />
+      <module name="hsstest" options="-parameters" />
+      <module name="messagequeue" options="-parameters" />
+      <module name="msgdemo" options="-parameters" />
+      <module name="msgreceive" options="-parameters" />
+      <module name="msgsend" options="-parameters" />
+      <module name="toredis" options="-parameters" />
+    </option>
+  </component>
+</project>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.hssdemo.mapper.UeDataMapper">
+
+    <select id="selectUeData" resultType="uedata">
+        select ipused,homestationaddr,homestationport,serviceareaind,uerohcind,freqind,algepc,ueipaddr,qci,apnambrul,apnambrdl,rgwidentity,pdntype,apn,mmeaddr,ispurged,ueambrul,ueambrdl,a.imsi
+        from tuedata a,tsubcontext b where a.Imsi=b.Imsi
+        limit #{page},#{size}
+    </select>
+
+    <select id="count" resultType="Long">
+        select count(a.Imsi) from tuedata a,tsubcontext b where a.Imsi=b.Imsi
+    </select>
+
+    <insert id="insertBatch" parameterType="java.util.List">
+        insert into tuedump (imsi, attachstatus, ueipaddr, uestatuschangetime, uemacroenbid, uecellid, mmeappip, rgwid) values
+        <foreach collection="list" item="item" index="index" separator=",">
+            (#{item.imsi},#{item.attachstatus},#{item.ueipaddr},#{item.uestatuschangetime},#{item.uemacroenbid},#{item.uecellid},#{item.mmeappip},#{item.rgwid})
+        </foreach>
+    </insert>
+
+</mapper>
